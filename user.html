@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+    <meta charset="UTF-8">
+    <title>User</title>
+</head>
+<body>
+    <h1>გამარჯობა, {{ name }}</h1>
+    <p>შენი ასაკი არის {{ age }}.</p>
+    <p>თქვენი ასაკის გამყოფებია:</p>
+    {% for i in range(1, age + 1) %}
+        {%if age % i==0 %}
+        <p>{{ i }}</p>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
